@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import Landingpage from './pages/Landingpage'; 
+import LandingPage from './pages/Landingpage'; 
 import DaftarRelawan from './pages/DaftarRelawan';
 import DaftarOrganisasi from './pages/DaftarOrganisasi';
-import Tentangkami from './pages/TentangKami';
+import Tentangkami from './pages/Tentangkami';
 import Donasi from './pages/Donasi';
 import Donate from './pages/Donate';
 import Dashboardrelawan from './pages/Dashboardrelawan';
@@ -27,15 +27,15 @@ const App = () => {
     <div>
       
       <Routes>
-        <Route path="/" element={<Landingpage pageType="beforeLogin" />} />
+        <Route path="/" element={<LandingPage pageType="beforeLogin" />} />
         <Route path="/Tentangkami" element={<Tentangkami />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/DaftarRelawan" element={<DaftarRelawan />} />
         <Route path="/DaftarOrganisasi" element={<DaftarOrganisasi />} />
         <Route path="/RequestPasswordReset" element={<RequestPasswordReset />} />
         <Route path="/ResetPassword" element={<ResetPassword />} />
-        <Route path="/landing/organisasi" element={<Landingpage pageType="organisasi" />} />
-        <Route path="/landing/relawan" element={<Landingpage pageType="relawan" />} />
+        <Route path="/landing/organisasi" element={<LandingPage pageType="organisasi" />} />
+        <Route path="/landing/relawan" element={<LandingPage pageType="relawan" />} />
         <Route path="/Donasi" element={<Donasi />} />
         <Route path="/Donate" element={<Donate />} />
         <Route path="/Dashboardrelawan" element={<Dashboardrelawan />} />

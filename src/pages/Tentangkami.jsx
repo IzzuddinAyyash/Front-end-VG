@@ -6,7 +6,7 @@ import HeaderOrganisasi from '../components/HeaderOrganisasi';
 import tk from '../assets/tk.png';
 import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 
-const TentangKami = () => {
+const Tentangkami = () => {
   
   const userRole = 'relawan'; 
   
@@ -57,4 +57,4 @@ const TentangKami = () => {
   );
 }
 
-export default TentangKami;
+export default Tentangkami;
