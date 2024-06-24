@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+import HeaderOrganisasi from '../components/HeaderOrganisasi'
 import Donasicomp from '../components/Donasicomp';
 import Footer from "../components/Footer";
 
 const Donasi = () => {
   return ( 
     <div className="overflow-hidden">
-      <Header />
+      <HeaderOrganisasi />
       <Donasicomp />
       <Footer />
     </div>

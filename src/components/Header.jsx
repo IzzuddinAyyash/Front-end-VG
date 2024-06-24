@@ -66,7 +66,7 @@ const Header = ({ isLoggedIn, onLogout }) => {
       <Link to="/">
         <span className="text-white font-semi-bold hover:text-blue-500">Beranda</span>
       </Link>
-      <Link to="/Tentangkami">
+      <Link to="/Login">
         <span className="text-white font-semi-bold hover:text-blue-500">Tentang Kami</span>
       </Link>
       <div className="relative">
@@ -89,7 +89,7 @@ const Header = ({ isLoggedIn, onLogout }) => {
             <Link to="/Login" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cari Relawan</Link>
             <Link to="/Login" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cari Organisasi</Link>
             <Link to="/Login" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cari Proyek</Link>
-            <Link to="/Donasi" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Donasi</Link>
+            <Link to="/Login" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Donasi</Link>
           </div>
         </Transition>
       </div>
@@ -236,8 +236,8 @@ const Header = ({ isLoggedIn, onLogout }) => {
               </Menu>
             ) : (
               <>
-                <button onClick={handleDaftarClick} className="bg-blue-500 text-white font-semi-bold px-4 py-2 rounded-full hover:bg-blue-600 focus:outline-none">Daftar</button>
-                <Link to="/Login" className="bg-white text-blue-500 font-semi-bold px-4 py-2 rounded-full hover:bg-gray-100 focus:outline-none">Masuk</Link>
+                <button onClick={handleDaftarClick} className="bg-transparent border border-white text-white font-semibold px-4 py-2 rounded-full hover:bg-blue-600 focus:outline-none">Daftar</button>
+                <Link to="/Login" className="bg-transparent border border-white text-white font-semibold px-4 py-2 rounded-full hover:bg-blue-600 focus:outline-none">Masuk</Link>
               </>
             )}
           </div>

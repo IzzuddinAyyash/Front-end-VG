@@ -79,8 +79,8 @@ const DaftarOrganisasi = () => {
       });
 
       if (response.data.success) {
-        // Save organization ID or logo URL in localStorage/sessionStorage for ProfileOrganization
-        localStorage.setItem('organizationLogoUrl', response.data.logoUrl); // Example: saving logo URL
+        
+        localStorage.setItem('organizationLogoUrl', response.data.logoUrl); 
         navigate('/success');
       } else {
         setError(response.data.message);

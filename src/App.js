@@ -1,12 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import Landingpage from './pages/Landingpage';
+import Landingpage from './pages/LandingPage'; 
 import DaftarRelawan from './pages/DaftarRelawan';
 import DaftarOrganisasi from './pages/DaftarOrganisasi';
-import Tentangkami from './pages/Tentangkami';
-import Lprelawan from './pages/Lprelawan';
-import Lporganisasi from './pages/Lporganisasi';
+import Tentangkami from './pages/TentangKami';
 import Donasi from './pages/Donasi';
 import Donate from './pages/Donate';
 import Dashboardrelawan from './pages/Dashboardrelawan';
@@ -22,21 +20,22 @@ import RequestPasswordReset from './pages/RequestPasswordReset';
 import ResetPassword from './pages/ResetPassword';
 import DetailProyek from './components/DetailProyek';
 import UploadProyekPage from './pages/UploadProyekPage';
-
+import AboutUs from './pages/AboutUs'
 
 const App = () => {
   return (
     <div>
+      
       <Routes>
-        <Route path="/" element={<Landingpage />} />
+        <Route path="/" element={<Landingpage pageType="beforeLogin" />} />
         <Route path="/Tentangkami" element={<Tentangkami />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/DaftarRelawan" element={<DaftarRelawan />} />
         <Route path="/DaftarOrganisasi" element={<DaftarOrganisasi />} />
         <Route path="/RequestPasswordReset" element={<RequestPasswordReset />} />
         <Route path="/ResetPassword" element={<ResetPassword />} />
-        <Route path="/Lprelawan" element={<Lprelawan />} />
-        <Route path="/Lporganisasi" element={<Lporganisasi />} />
+        <Route path="/landing/organisasi" element={<Landingpage pageType="organisasi" />} />
+        <Route path="/landing/relawan" element={<Landingpage pageType="relawan" />} />
         <Route path="/Donasi" element={<Donasi />} />
         <Route path="/Donate" element={<Donate />} />
         <Route path="/Dashboardrelawan" element={<Dashboardrelawan />} />
@@ -50,7 +49,7 @@ const App = () => {
         <Route path="/CariRelawan" element={<CariRelawan />} />
         <Route path="/success" element={<Success />} />
         <Route path="/UploadProyekPage" element={<UploadProyekPage />} />
-
+        <Route path="/AboutUs" element={<AboutUs/>} />
       </Routes>
     </div>
   );

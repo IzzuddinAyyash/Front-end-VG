@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import iconuser from "../assets/iconuser.png";
 import logo from "../assets/logo.png"; 
 
-const HeaderLogin = () => {
+const HeaderRelawan = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -35,7 +35,6 @@ const HeaderLogin = () => {
   }, []);
 
   const handleSignOut = () => {
-    
     navigate('/');
   };
 
@@ -57,7 +56,7 @@ const HeaderLogin = () => {
           </div>
         </div>
         <div className="hidden md:flex space-x-8 items-center mx-auto">
-          <Link to="/Lprelawan">
+          <Link to="/landing/relawan">
             <span className="text-white font-semi-bold hover:text-blue-500">Beranda</span>
           </Link>
           <Link to="/Tentangkami">
@@ -156,35 +155,25 @@ const HeaderLogin = () => {
       >
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/">
-              <span className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Beranda
+            <Link to="/landing-relawan">
+              <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Beranda
 </span>
             </Link>
             <Link to="/Tentangkami">
-              <span className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Tentang Kami</span>
+              <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Tentang Kami</span>
             </Link>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500"
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500"
               onClick={toggleDropdown}
             >Lainnya
             </a>
             {isDropdownOpen && (
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <Link to="/CariRelawan" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Cari Relawan</Link>
-                <Link to="/CariOrganisasi" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Cari Organisasi</Link>
-                <Link to="/CariProyek" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Cari Proyek</Link>
-                <Link to="/Donasi" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Donasi</Link>
+                <Link to="/CariRelawan" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Cari Relawan</Link>
+                <Link to="/CariOrganisasi" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Cari Organisasi</Link>
+                <Link to="/CariProyek" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Cari Proyek</Link>
+                <Link to="/Donasi" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Donasi</Link>
               </div>
             )}
-            <Link to="/Daftar">
-              <button className="w-full text-black border border-black px-2 py-1 rounded-full hover:bg-black hover:text-white transition font-thin">
-                Daftar
-              </button>
-            </Link>
-            <Link to="Login">
-              <button className="w-full text-black border border-black px-2 py-1 rounded-full hover:bg-black hover:text-white transition font-thin">
-                Masuk
-              </button>
-            </Link>
           </div>
         </div>
       </Transition>
@@ -192,4 +181,4 @@ const HeaderLogin = () => {
   );
 }
 
-export default HeaderLogin;
+export default HeaderRelawan;

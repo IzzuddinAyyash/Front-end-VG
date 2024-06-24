@@ -1,39 +1,25 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-import Header from '../components/Header';
+import React from 'react';
 import Home from '../components/Home';
-import Page from '../components/Page';
-import Kegiatan from '../components/Kegiatan';
-import Blog from '../components/Blog';
-import Tanggapan from '../components/Tanggapan';
-import Footer from '../components/Footer';
-import BuatAkun from '../components/BuatAkun';
+import HomeOrganisasi from '../components/HomeOrganisasi';
+import HomeRelawan from '../components/HomeRelawan';
 
-const LandingPage = ({ isLoggedIn, onLogout }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+const LandingPage = ({ pageType }) => {
+  let content;
 
-  const handleDaftarClick = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+  switch (pageType) {
+    case 'organisasi':
+      content = <HomeOrganisasi />;
+      break;
+    case 'relawan':
+      content = <HomeRelawan />;
+      break;
+    default:
+      content = <Home />;
+  }
 
   return (
-    <div className="overflow-hidden">
-      <Header  />
-
-      <Home />
-      <Page />
-      <Kegiatan />
-      <Blog />
-      <Tanggapan />
-      <Footer />
-
-     
-     
+    <div>
+      {content}
     </div>
   );
 };

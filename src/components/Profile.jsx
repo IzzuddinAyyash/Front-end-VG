@@ -16,21 +16,24 @@ const Profile = () => {
     });
     const [isLoading, setIsLoading] = useState(true);
     const [isEditing, setIsEditing] = useState(false);
-    const [editedData, setEditedData] = useState(profileData);
-
+    const [editedData, setEditedData] = useState({}); 
     useEffect(() => {
-        
+        fetchData();
+    }, []);
+
+    const fetchData = () => {
+        setIsLoading(true);
         axios.get('/api/profile')
             .then(response => {
                 setProfileData(response.data);
-                setEditedData(response.data);
+                setEditedData(response.data); 
                 setIsLoading(false);
             })
             .catch(error => {
                 console.error('Error fetching profile data:', error);
                 setIsLoading(false);
             });
-    }, []);
+    };
 
     const handleEditClick = () => {
         setIsEditing(true);

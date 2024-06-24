@@ -56,10 +56,10 @@ const HeaderOrganisasi = () => {
           </div>
         </div>
         <div className="hidden md:flex space-x-8 items-center mx-auto">
-          <Link to="/LpOrganisasi">
+          <Link to="/Landing/organisasi">
             <span className="text-white font-semi-bold hover:text-blue-500">Beranda</span>
           </Link>
-          <Link to="/Tentangkami">
+          <Link to="/AboutUs">
             <span className="text-white font-semi-bold hover:text-blue-500">Tentang Kami</span>
           </Link>
           <div className="relative">
@@ -80,7 +80,7 @@ const HeaderOrganisasi = () => {
             >
               <div className="absolute mt-2 w-48 bg-white rounded-md shadow-lg z-20">
                 <Link to="/CariRelawan" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cari Relawan</Link>
-                <Link to="/Donate" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Donasi</Link>
+                <Link to="/Donasi" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Donasi</Link>
                 <Link to="/UploadProyekPage" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Upload Project</Link>
               </div>
             </Transition>
@@ -156,33 +156,23 @@ const HeaderOrganisasi = () => {
       >
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/">
-              <span className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Beranda</span>
+            <Link to="/landing/organisasi">
+              <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Beranda</span>
             </Link>
-            <Link to="/Tentangkami">
-              <span className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Tentang Kami</span>
+            <Link to="/AboutUs">
+              <span className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Tentang Kami</span>
             </Link>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500"
+            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500"
               onClick={toggleDropdown}
             >Lainnya
             </a>
             {isDropdownOpen && (
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <Link to="/CariProyek" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Cari Proyek</Link>
-                <Link to="/Donasi" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Donasi</Link>
-                <Link to="/UploadProyekPage" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500">Upload Project</Link>
+                <Link to="/CariProyek" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Cari Proyek</Link>
+                <Link to="/Donasi" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Donasi</Link>
+                <Link to="/UploadProyekPage" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-blue-500">Upload Project</Link>
               </div>
             )}
-            <Link to="/Daftar">
-              <button className="w-full text-black border border-black px-2 py-1 rounded-full hover:bg-black hover:text-white transition font-thin">
-                Daftar
-              </button>
-            </Link>
-            <Link to="Login">
-              <button className="w-full text-black border border-black px-2 py-1 rounded-full hover:bg-black hover:text-white transition font-thin">
-                Masuk
-              </button>
-            </Link>
           </div>
         </div>
       </Transition>

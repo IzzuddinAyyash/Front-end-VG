@@ -1,5 +1,5 @@
 import React from 'react';
-import iconuser from '../assets/iconuser.png'; // Pastikan path ini benar
+import iconuser from '../assets/iconuser.png'; 
 
 const VolunteerCard = ({ name, location, skills }) => {
   return (
