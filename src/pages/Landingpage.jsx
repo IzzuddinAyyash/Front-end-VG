@@ -3,7 +3,7 @@ import Home from '../components/Home';
 import HomeOrganisasi from '../components/HomeOrganisasi';
 import HomeRelawan from '../components/HomeRelawan';
 
-const LandingPage = ({ pageType }) => {
+const Landingpage = ({ pageType }) => {
   let content;
 
   switch (pageType) {
@@ -24,4 +24,4 @@ const LandingPage = ({ pageType }) => {
   );
 };
 
-export default LandingPage;
+export default Landingpage;
