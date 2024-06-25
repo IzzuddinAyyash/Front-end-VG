@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import HeaderRelawan from '../components/HeaderRelawan';
 import { useParams } from 'react-router-dom';
 import { organisasi } from '../data/organisasi';
-import InfoOrganisasicomp from '../components/InfoOrganisasicomp';
+import ProfileOrganisasicomp from '../components/ProfileOrganisasicomp';
 
 const InfoOrganisasi = () => {
   const { id } = useParams(); 
@@ -16,7 +16,7 @@ const InfoOrganisasi = () => {
   return (
     <div className="overflow-hidden">
       <HeaderRelawan />
-      <InfoOrganisasicomp organisasiItem={organisasiItem} />
+      <ProfileOrganisasicomp organisasiItem={organisasiItem} />
       <Footer />
     </div>
   );
