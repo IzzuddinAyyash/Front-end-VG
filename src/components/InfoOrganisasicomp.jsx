@@ -24,7 +24,7 @@ const ProfileOrganisasicomp = () => {
                 <p className="text-gray-600 text-sm font-thin max-w-s">Our name is an Indonesian abbreviation for Hutan, Alam, dan Lingkungan Aceh. We are an Aceh based non-profit organization working to protect the Leuser Ecosystem, the last place on earth where rhinos, elephants, tigers, and orangutans still roam together in the wild. At HAkA we have a strong believe that policy advocacy is as much as important as the regular protection on the ground.
 
 The Leuser Ecosystem has been on the list of UNESCO World Heritage site for its rich of biodiversity and high carbon stock. Research shows that dense rainforest of the Leuser carry environmental functions that is important for people to survive (e.g. clean water, clean air). Our approaches emphasize on encouraging good policy and empowering civil society, particularly grassroot community, to act to enhance environment for the long term health of Aceh Province - socially, financially, and environmentally.</p>
-                <div className="flex items-center text-gray-600 mb-4 mt-4 ml-10 text-sm space-x-4">
+                <div className="flex items-center font-bold text-gray-600 mb-4 mt-4  text-sm space-x-4">
                 <div>Edukasi</div>
               </div>
 

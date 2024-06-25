@@ -9,7 +9,7 @@ import Donasi from './pages/Donasi';
 import Donate from './pages/Donate';
 import Dashboardrelawan from './pages/Dashboardrelawan';
 import DashboardOrganisasi from './pages/DashboardOrganisasi';
-import ProfileRelawan from './pages/ProfileRelawan';
+import ProfileRelawan from './pages/DetailProfileRelawan';
 import ProfileOrganisasi from './pages/ProfileOrganisasi';
 import InfoOrganisasi from './pages/InfoOrganisasi';
 import CariOrganisasi from './pages/CariOrganisasi';
@@ -40,13 +40,13 @@ const App = () => {
         <Route path="/Donate" element={<Donate />} />
         <Route path="/Dashboardrelawan" element={<Dashboardrelawan />} />
         <Route path="/DashboardOrganisasi" element={<DashboardOrganisasi />} />
-        <Route path="/ProfileRelawan" element={<ProfileRelawan />} />
+        <Route exact path="/CariRelawan" element={<CariRelawan/>} />
+        <Route path="/DetailProfileRelawan/:name" element={<ProfileRelawan/>} />
         <Route path="/ProfileOrganisasi" element={<ProfileOrganisasi />} />
-        <Route path="/InfoOrganisasi" element={<InfoOrganisasi />} />
         <Route path="/CariProyek" element={<CariProyek />} />
         <Route path="/DetailProyek" element={<DetailProyek />} />
         <Route path="/CariOrganisasi" element={<CariOrganisasi />} />
-        <Route path="/CariRelawan" element={<CariRelawan />} />
+        <Route path="/InfoOrganisasi/:id" element={<InfoOrganisasi />} />
         <Route path="/success" element={<Success />} />
         <Route path="/UploadProyekPage" element={<UploadProyekPage />} />
         <Route path="/AboutUs" element={<AboutUs/>} />

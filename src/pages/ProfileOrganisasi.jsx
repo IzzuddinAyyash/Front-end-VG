@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProfileOrganization from '../components/ProfileOrganization'; 
+import HeaderOrganisasi from '../components/HeaderOrganisasi';
 
 const ProfilePage = () => {
   return (
     <div>
-      <Navbar />
+      <HeaderOrganisasi />
       <ProfileOrganization />
       <Footer />
     </div>

@@ -4,10 +4,10 @@ import { GrAnnounce } from 'react-icons/gr';
 
 const DashboardOrganisasi = () => {
   const [relawanList, setRelawanList] = useState([
-    { id: 1, nama: 'El Gasing', email: 'El.Gasing@example.com', noHp: '08123456789', alamat: 'Jl. Raya No. 123', status: 'Menunggu seleksi' },
-    { id: 2, nama: 'El Template', email: 'El.Template@example.com', noHp: '087654321', alamat: 'Jl. Kembang No. 45', status: 'Menunggu seleksi' },
-    { id: 3, nama: 'El Bolabali', email: 'El.Bolabali@example.com', noHp: '08987654321', alamat: 'Jl. Anggrek No. 78', status: 'Menunggu seleksi' },
-    { id: 4, nama: 'El Mangrove', email: 'El.Mangrove@example.com', noHp: '08987654321', alamat: 'Jl. Anggrek No. 78', status: 'Menunggu seleksi' },
+    { id: 1, nama: 'Anthony', email: 'El.Gasing@example.com', noHp: '08123456789', alamat: 'Jl. Raya No. 123', status: 'Menunggu seleksi' },
+    { id: 2, nama: 'Mudryk', email: 'Mudryk@example.com', noHp: '087654321', alamat: 'Jl. Kembang No. 45', status: 'Menunggu seleksi' },
+    { id: 3, nama: 'Raffasyah', email: 'Raffasyah@example.com', noHp: '08987654321', alamat: 'Jl. Anggrek No. 78', status: 'Menunggu seleksi' },
+    { id: 4, nama: 'Erbie Raffasyah', email: 'Erbie Raffasyah@example.com', noHp: '08987654321', alamat: 'Jl. Anggrek No. 78', status: 'Menunggu seleksi' },
   ]);
 
   const [totalRelawanDiproses, setTotalRelawanDiproses] = useState(0);

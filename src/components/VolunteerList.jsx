@@ -1,22 +1,9 @@
 import React from 'react';
 import VolunteerCard from '../components/VolunteerCard';
 import { Link } from 'react-router-dom';
+import { volunteers } from '../data/relawan'; 
 
 const VolunteerList = () => {
-  const volunteers = [
-    {
-      name: 'Muhammad Erbie Raffasyah',
-      location: 'Kota Baru Parahyangan, Bekasi',
-      skills: 'Excel, Word, Photoshop, Adobe Lightroom, Adobe Illustrator',
-    },
-    {
-      name: 'Muhammad Erbie Raffasyah',
-      location: 'Kota Baru Parahyangan, Bekasi',
-      skills: 'Excel, Word, Photoshop, Adobe Lightroom, Adobe Illustrator',
-    },
-    
-  ];
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold text-center mb-2">Relawan yang berminat bergabung pada organisasi</h1>
@@ -30,7 +17,7 @@ const VolunteerList = () => {
         />
       ))}
       <div className="text-center mt-8">
-      <Link to="/CariRelawan" className="text-base underline" style={{ color: '#0A65CC' }}>Lihat Relawan Lainnya</Link>
+        <Link to="/CariRelawan" className="text-base underline" style={{ color: '#0A65CC' }}>Lihat Relawan Lainnya</Link>
       </div>
     </div>
   );
