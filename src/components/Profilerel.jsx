@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import iconuser from '../assets/iconuser.png';
 
-const Profile = () => {
+const Profilerel = () => {
     const [profileData, setProfileData] = useState({
         name: "",
         phone: "",
@@ -243,4 +243,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default Profilerel;

@@ -7,6 +7,7 @@ import DaftarOrganisasi from './pages/DaftarOrganisasi';
 import Tentangkami from './pages/Tentangkami';
 import Donasi from './pages/Donasi';
 import Donate from './pages/Donate';
+import Profile from './pages/Profile';
 import Dashboardrelawan from './pages/Dashboardrelawan';
 import DashboardOrganisasi from './pages/DashboardOrganisasi';
 import ProfileRelawan from './pages/DetailProfileRelawan';
@@ -43,6 +44,7 @@ const App = () => {
         <Route exact path="/CariRelawan" element={<CariRelawan/>} />
         <Route path="/DetailProfileRelawan/:name" element={<ProfileRelawan/>} />
         <Route path="/ProfileOrganisasi" element={<ProfileOrganisasi />} />
+        <Route path="/Profile" element={<Profile />} />
         <Route path="/CariProyek" element={<CariProyek />} />
         <Route path="/DetailProyek" element={<DetailProyek />} />
         <Route path="/CariOrganisasi" element={<CariOrganisasi />} />
